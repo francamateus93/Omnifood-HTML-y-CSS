@@ -113,26 +113,23 @@ body {
   font-weight: 400;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
-
   border: none;
   cursor: pointer;
   font-family: inherit;
-
-  /* Put transition on original "state" */
-  /* transition: background-color 0.3s; */
   transition: all 0.3s;
 }
 
-.btn--full:link,
-.btn--full:visited {
+.btn--full,
+.btn--full:link {
   background-color: #379E0A;
   color: #fff;
   margin-bottom: 0.8rem;
+  outline: none;
 }
 
-.btn--full:hover,
-.btn--full:active {
+.btn--full:hover {
   background-color: #256d07;
+  outline: none;
 }
 
 .btn--outline:link,
@@ -140,6 +137,7 @@ body {
   background-color: transparent;
   border: 2px solid rgba(55, 158, 10, 0.494);
   color: #379E0A;
+  outline: none;
 }
 
 .btn--outline:hover,
@@ -147,6 +145,7 @@ body {
   background-color: rgba(55, 158, 10, 0.494);
   border: 2px solid transparent;
   color: #fff;
+  outline: none;
   /* box-shadow: 0 0 0 1px #369e0a7e; */
 }
 
@@ -160,6 +159,56 @@ body {
 .btn--form:hover {
   background-color: #1c4f07;
   color: #fff;
+}
+
+/* Modal */
+.modal {
+  display: none; /* Escondido por padrão */
+  position: fixed; /* Fica sobre o viewport */
+  z-index: 1; /* Fica acima de outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%; /* Largura total */
+  height: 100%; /* Altura total */
+  overflow: auto; /* Ativa rolagem se necessário */
+  background-color: rgb(0,0,0); /* Fundo preto */
+  background-color: rgba(0,0,0,0.5); /* Fundo preto com opacidade */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 40px;
+  border-radius: 1rem;
+  width: 80%;
+}
+
+.thank-you-text {
+  color: #888;
+  font-size: 2.4rem;
+  font-weight: 300;
+  padding-bottom: 1rem;  
+}
+
+.thank-you-logo {
+  margin-top: 2rem;
+  height: 2.8rem;
+  opacity: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.close:hover,
+.close:focus {
+  color: #379E0A;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .link:link,
@@ -197,14 +246,13 @@ body {
 .list-icon {
   width: 3rem;
   height: 3rem;
-  color: #379E0A;
+  color: rgb(55, 158, 10);
 }
 
 *:focus {
   outline: none;
-  /* outline: 4px dotted #e67e22; */
   /* outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem rgba(55, 158, 10, 0.5);
+  /* box-shadow: 0 0 0 0.8rem rgba(55, 158, 10, 0.5); */
 }
 
 .margin-right-sm {
@@ -257,7 +305,7 @@ strong {
   display: inline-block;
   text-decoration: none;
   color: #333;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
 }
@@ -824,7 +872,7 @@ strong {
 
 .cta *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+  /* box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5); */
 }
 
 

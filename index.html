@@ -15,7 +15,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-    <script defer src="js/script.js"></script>
+    <script defer src="script.js"></script>
 
   </head>
   <body>
@@ -543,7 +543,7 @@
                 first meal is on us!
               </p>
 
-              <form class="cta-form" name="sign-up" netlify>
+              <form class="cta-form" name="sign-up">
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
@@ -551,7 +551,6 @@
                     type="text"
                     placeholder="John Smith"
                     name="full-name"
-                    required
                   />
                 </div>
 
@@ -562,13 +561,12 @@
                     type="email"
                     placeholder="me@example.com"
                     name="email"
-                    required
                   />
                 </div>
 
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-                  <select id="select-where" name="select-where" required>
+                  <select id="select-where" name="select-where">
                     <option value="">Please choose one option:</option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">YouTube video</option>
@@ -577,17 +575,24 @@
                     <option value="others">Others</option>
                   </select>
                 </div>
+                
+                <button id="signup-button" class="btn btn--form">Sign up now</button>
+                <div id="thank-you-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div>
+                      <p class="thank-you-text">Glad that you signing up!</p>
+                      <p class="thank-you-text"> We will contact you soon. Thank you :)</p>
+                      <a href="#">
+                        <img class="thank-you-logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-                <button class="btn btn--form">Sign up now</button>
-
-                <!-- <input type="checkbox" /> -->
               </form>
             </div>
-            <div
-              class="cta-img-box"
-              role="img"
-              aria-label="Woman enjoying food"
-            ></div>
+            <div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
           </div>
         </div>
       </section>

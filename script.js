@@ -1,24 +1,4 @@
-console.log("Hello world!");
-
-const myName = "Jonas Schmedtmann";
-const h1 = document.querySelector(".heading-primary");
-console.log(myName);
-console.log(h1);
-
-// h1.addEventListener("click", function () {
-//   h1.textContent = myName;
-//   h1.style.backgroundColor = "red";
-//   h1.style.padding = "5rem";
-// });
-
-///////////////////////////////////////////////////////////
-// Set current year
-const yearEl = document.querySelector(".year");
-const currentYear = new Date().getFullYear();
-yearEl.textContent = currentYear;
-
-///////////////////////////////////////////////////////////
-// Make mobile navigation work
+// Mobile navigation
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
@@ -27,7 +7,7 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-///////////////////////////////////////////////////////////
+
 // Smooth scrolling animation
 
 const allLinks = document.querySelectorAll("a:link");
@@ -37,26 +17,23 @@ allLinks.forEach(function (link) {
     e.preventDefault();
     const href = link.getAttribute("href");
 
-    // Scroll back to top
     if (href === "#")
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
 
-    // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
-    // Close mobile naviagtion
     if (link.classList.contains("main-nav-link"))
       headerEl.classList.toggle("nav-open");
   });
 });
 
-///////////////////////////////////////////////////////////
+
 // Sticky navigation
 
 const sectionHeroEl = document.querySelector(".section-hero");
@@ -64,7 +41,7 @@ const sectionHeroEl = document.querySelector(".section-hero");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
+    // console.log(ent);
 
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
@@ -83,75 +60,45 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEl);
 
-///////////////////////////////////////////////////////////
-// Fixing flexbox gap property missing in some Safari versions
-function checkFlexGap() {
-  var flex = document.createElement("div");
-  flex.style.display = "flex";
-  flex.style.flexDirection = "column";
-  flex.style.rowGap = "1px";
+// Form data and Modal
 
-  flex.appendChild(document.createElement("div"));
-  flex.appendChild(document.createElement("div"));
+// Get form
+const form = document.querySelector('.cta-form');
+const modal = document.getElementById('thank-you-modal');
+const closeModal = document.querySelector('.close');
+const signupButton = document.getElementById('signup-button');
 
-  document.body.appendChild(flex);
-  var isSupported = flex.scrollHeight === 1;
-  flex.parentNode.removeChild(flex);
-  console.log(isSupported);
+// Colect data
+const handleSignup = () => {
 
-  if (!isSupported) document.body.classList.add("no-flexbox-gap");
-}
-checkFlexGap();
+  const fullName = document.getElementById('full-name').value;
+  const email = document.getElementById('email').value;
+  const source = document.getElementById('select-where').value;
 
-// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+  // console.log('Full Name:', fullName);
+  // console.log('Email:', email);
+  // console.log('Source:', source);
 
-/*
-.no-flexbox-gap .main-nav-list li:not(:last-child) {
-  margin-right: 4.8rem;
-}
+  // Open modal
+  modal.style.display = 'block';
+  form.reset();
+};
 
-.no-flexbox-gap .list-item:not(:last-child) {
-  margin-bottom: 1.6rem;
-}
+signupButton.addEventListener('click', handleSignup);
 
-.no-flexbox-gap .list-icon:not(:last-child) {
-  margin-right: 1.6rem;
+// Closing modal
+closeModal.onclick = function() {
+  modal.style.display = 'none';
 }
 
-.no-flexbox-gap .delivered-faces {
-  margin-right: 1.6rem;
-}
-
-.no-flexbox-gap .meal-attribute:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-.no-flexbox-gap .meal-icon {
-  margin-right: 1.6rem;
-}
-
-.no-flexbox-gap .footer-row div:not(:last-child) {
-  margin-right: 6.4rem;
-}
-
-.no-flexbox-gap .social-links li:not(:last-child) {
-  margin-right: 2.4rem;
-}
-
-.no-flexbox-gap .footer-nav li:not(:last-child) {
-  margin-bottom: 2.4rem;
-}
-
-@media (max-width: 75em) {
-  .no-flexbox-gap .main-nav-list li:not(:last-child) {
-    margin-right: 3.2rem;
+window.onclick = function(event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
   }
 }
 
-@media (max-width: 59em) {
-  .no-flexbox-gap .main-nav-list li:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 4.8rem;
-  }
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
 }
-*/
