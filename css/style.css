@@ -127,6 +127,7 @@ body {
 .btn--full:visited {
   background-color: #379E0A;
   color: #fff;
+  margin-bottom: 0.8rem;
 }
 
 .btn--full:hover,
