@@ -8,7 +8,7 @@ We are a technology company first, but with a major focus on consumer well-being
 
 Headline: A healthy meal delivered to your door, every single day
 
-Brand color: #e67e22
+Brand color: #379E0A
 
 ## Omnifood Website Content
 
@@ -35,17 +35,6 @@ Approve your weekly meal plan: Once per week, approve the meal plan generated fo
 
 Receive meals at convenient time: Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
 
-### Omnifood works with any diet
-
-Vegetarian
-Vegan
-Pescatarian
-Gluten-free
-Lactose-free
-Keto
-Paleo
-Low FODMAP
-Kid-friendly
 
 ### Sample meals
 
@@ -53,23 +42,28 @@ Kid-friendly
 
 Meal 1: Japanese Gyozas
 
-- Category: Vegetarian
-- Calories: 650
-- NutriScore (Registered): 74
-- Average rating: 4.9
-- Number reviews: 537
+- Calories: 620
+- NutriScore (Registered): 71
+- Average rating: 4.7
+- Number reviews: 231
 
 Meal 2: Avocado Salad
 
-- Category: Vegan and Paleo
-- Calories: 400
+- Calories: 430
 - NutriScore (Registered): 92
 - Average rating: 4.8
-- Number reviews: 441
+- Number reviews: 358
+
+Meal 3: Pasta Salad
+
+- Calories: 589
+- NutriScore (Registered): 88
+- Average rating: 4.8
+- Number reviews: 541
+
 
 ### We offer a free sample meal
 
-[Create simple form for users to sign up]
 
 Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!
 
@@ -90,20 +84,27 @@ Complete: $649 per month
 - Delivery is free
 - Get access to latest recipes
 
-### Photo gallery
-
-[Use the 12 photos we provided]
 
 ### Customer testimonials
 
 [Photos of customers included]
 
-Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical. (Dave Bryson)
-The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore! (Ben Hadley)
-Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now! (Steve Miller)
-I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic. (Hannah Smith)
+Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.
+— Jordi Blau
+Barcelona, Spain
 
-### Section with logos of featured publications [see images]
+The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore!
+— Victor Sanchez
+Madrid, Spain
+
+Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now!
+— David García
+Sevilla, Spain
+
+I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic.
+— Alba Fernández
+Granada, Spain
+
 
 ### Contact information
 
@@ -113,7 +114,7 @@ Email: hello@omnifood.com
 
 Social profiles: instagram, facebook, twitter [links to them not available yet]
 
-### Additional links [links not available yet]
+### Additional links
 
 Create account
 Sign in
@@ -135,10 +136,10 @@ Privacy & terms
 
 - Logo + Navigation
 - Hero
-- Featured in
 - How it works
-- Meals (and list of diets)
+- Meals
 - Testimonials + gallery
+- Featured in
 - Pricing + features
 - CTA
 - Footer
