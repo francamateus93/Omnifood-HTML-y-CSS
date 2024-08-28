@@ -25,43 +25,6 @@ With the website, the company not only improves the user experience, but also st
 (https://code.visualstudio.com/)
 
 
-## Installation
-
-To install and run the application locally, follow these detailed steps:
-
-1. **Clone this repository to your local machine:**
-
-```bash
-git clone https://github.com/Innovaton0/Mimi-Sofm-final-project
-```
-
-2. **Navigate to the project directory:**
-
-```bash
-cd Mimi-Sofm-final-project
-```
-
-3. **Install the required dependencies:**
-
-Make sure you have [Node.js](https://nodejs.org/) installed on your machine. Then, run the following command to install the project dependencies:
-
-```bash
-npm install
-```
-
-4. **Start the application:**
-
-Run the following command to start the application in development mode:
-
-```bash
-npm run dev
-```
-
-5. **Access the application:**
-
-Open your browser and visit `http://localhost:5173/` to see the application up and running.
-
-
 ## Credits
 
 This project was developed by [Mateus Landau França](https://github.com/francamateus93) in the course Build Responsive Real-World Websites with HTML and CSS by author Jonas Schmedtmann.
