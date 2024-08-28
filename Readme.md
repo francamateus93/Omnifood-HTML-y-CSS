@@ -1,4 +1,4 @@
-# Omnifood Responsive Website
+#🥑 Omnifood Responsive Website
 
 ## About project
 
