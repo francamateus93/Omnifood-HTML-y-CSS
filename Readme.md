@@ -10,14 +10,19 @@ With the website, the company not only improves the user experience, but also st
 ## Softwares and Languages
 
 - **Javascript**: Allows the creation of dynamic experiences, such as interactive forms, making the website more engaging.
+(https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 - **CSS**: Designed with CSS that facilitates a modern, attractive and responsive design.
+(https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 - **HTML**: Providing the basic structure of the page, improving accessibility.
+(https://developer.mozilla.org/es/docs/Web/HTML)
 
 - **Figma**: Design tool used to create high-quality visual graphics and prototypes.
+(https://www.figma.com/)
 
 - **Visual Studio Code**: Development environment used to write and debug code.
+(https://code.visualstudio.com/)
 
 
 ## Installation
